@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------C S S--------------------------------->
+<head>
+    <style>
+        #btn
+        {
+          display: inline;
+          text-decoration: none;
+          background: red;
+          color:rgba(0, 0, 255, 0.7);
+          font: 80px calibri;
+          border-radius: 50%;
+          box-shadow: 0px 0px 10px 15px #000000;
+          border: solid 10px rgba(255, 255, 0, 0.9);
+          cursor: pointer;
+        }
+        body {
+            font-family: "Calibri"; 
+            background-color: grey
+        }
+        h1   {
+            color: whitesmoke; 
+            text-align:center; 
+            font-size: 50px;
+        }
+    </style>
+</head>
+<!----------------------------H T M L--------------------------------->
+<body>
+    <h1>ESP8266 Webpage <br> (HTML + CSS + JavaScript) <br><br></h1>
+
+    <ul>
+        <li>
+            <a href="#" id="btn" ONCLICK='on()'>ON</a> <br><br>
+        </li>
+        <li>
+            <a href="#" id="btn" ONCLICK='off()'>OFF</a> <br><br>
+        </li>
+    </ul>
+
+<!---------------------------JavaScript------------------------------->
+<script>
+    //function displays text message
+    let m1 = 'Este botão faz com que o LED ligue'
+    let m2 = ' Este botão faz com que o LED desligue'
+
+
+    //function prompts for name, then displays message
+    function ON()
+    {
+        alert('LED LIGADO');
+    }
+    //function computes factorial of integer number
+    function OFF()
+    {
+        alert('LED DESLIGADO');
+    }   
+</script>
+</body>
+</html>
