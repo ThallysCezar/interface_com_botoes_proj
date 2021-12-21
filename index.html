@@ -21,13 +21,19 @@
           cursor: pointer;
         }
         body {
-            background-image: linear-gradient(45deg, black, crimson);
-            height: 100vh;
+          background-image: linear-gradient(45deg, black, crimson);
+          height: 100vh;
         }
         h1   {
-            color: whitesmoke; 
-            text-align:center; 
-            font-size: 50px;
+          color: whitesmoke; 
+          text-align:center; 
+          font-size: 50px;
+        }
+        .botao_off{
+          float: right;
+        }
+        .botao_on{
+          float: left;
         }
     </style>
 </head>
@@ -37,10 +43,10 @@
 
     <ul>
         <li>
-            <a href="#" id="btn" ONCLICK='on()'>ON</a> <br><br>
+            <a href="#" id="btn" class="botao_on" onclick="on()">ON</a> <br><br>
         </li>
         <li>
-            <a href="#" id="btn" ONCLICK='off()'>OFF</a> <br><br>
+            <a href="#" id="btn" class="botao_off" onclick="off()">OFF</a> <br><br>
         </li>
     </ul>
 
@@ -52,12 +58,12 @@
 
 
     //function prompts for name, then displays message
-    function ON()
+    function on()
     {
         alert('LED LIGADO');
     }
     //function computes factorial of integer number
-    function OFF()
+    function off()
     {
         alert('LED DESLIGADO');
     }   
